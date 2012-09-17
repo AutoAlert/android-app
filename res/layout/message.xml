@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/ScrollView01" 
+            android:layout_width="fill_parent" 
+            android:layout_height="fill_parent" 
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical" 
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:id="@+id/instructions_view" >
+
+<TextView   android:id="@+id/text" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" ></TextView>
+
+<EditText
+    android:id="@+id/editText"
+    android:layout_width="fill_parent"
+    android:gravity="top|left"
+    android:layout_height="100dp"
+    android:scrollbars="vertical"
+    android:inputType="textMultiLine" />
+
+<TableLayout
+        android:id="@+id/tbl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*" >
+ <TableRow >
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/ok"
+    android:text="OK" />
+    
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/Submit"
+    android:text="Submit" />
+</TableRow>
+       
+    </TableLayout>
+
+</LinearLayout>
+</ScrollView>
